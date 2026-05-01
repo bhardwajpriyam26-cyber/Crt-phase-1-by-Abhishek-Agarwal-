@@ -27,5 +27,31 @@ int main(){
     }else{
         cout<<"Not Eligible for Vote";
     }
+
+
+
+//problem 3--Nested if else statement
+#include<iostream>
+using namespace std;
+
+int main(){
+    int age;
+    cin>>age;
+    
+    if(age >= 18){
+        if(age >= 50){
+            cout<<"Senior citizens eligible for vote...";
+        } else {
+            cout<<"eligible for vote...";
+        }
+        } else {
+            if(age < 0){
+                cout<<"enter a valid age number...";
+            } else {
+              cout<<"not eligible for vote...";  
+            }
+        }
+        return 0;
+    }
     return 0;
 }
