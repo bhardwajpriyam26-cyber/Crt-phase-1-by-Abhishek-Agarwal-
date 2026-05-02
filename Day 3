@@ -8,3 +8,15 @@ int main(){
         cout<<i<<" ";
     }
 }
+
+
+//Problem 2
+//print even numders 1 to 10
+#include<iostream>
+using namespace std;
+
+int main(){
+    for(int i=0; i<=10; i+=2){
+        cout<<i<<" ";
+    }
+}
