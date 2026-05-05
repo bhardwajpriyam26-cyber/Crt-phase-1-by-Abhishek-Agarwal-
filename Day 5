@@ -35,3 +35,47 @@ int main(){
     int c = a+b;
     cout<<c;
 }
+
+//Problem 3 
+//functions with some values and some return values
+
+#include<iostream>
+using namespace std;
+
+int calculateArea(int length, int width){
+   return length * width; 
+}
+int main(){
+    int a=10;
+    int b=5;
+    int area=calculateArea(a,b);
+    cout<<area;
+}
+
+//Problem 4 
+//Types of functions
+//Program 4.1 -- no argument,no return Types
+
+#include<iostream>
+using namespace std;
+
+void bellRing(){
+    cout<<"Ting Tong...";
+}
+int main(){
+    bellRing();
+}
+
+
+//Problem 4.2 -- argument,no return values 
+
+#include<iostream>
+using namespace std;
+
+void sendMessage(string message){
+    cout<<message;
+}
+
+int main(){
+    sendMessage("BJP wons...");
+}
