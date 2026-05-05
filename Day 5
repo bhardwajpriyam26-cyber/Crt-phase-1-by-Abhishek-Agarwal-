@@ -93,3 +93,24 @@ int ticketNumber(){
 int main(){
     cout<<ticketNumber();
 }
+
+
+//Problem 5
+//Convert rupees into dollar
+
+#include<iostream>
+using namespace std;
+
+double convertToDollar(double rupees){
+    double rate=83.0;
+    return rupees / rate;
+}
+int main(){
+    double rupees = 100;
+    double dollars;
+    dollars = convertToDollar(rupees);
+    
+    cout<<"Rupees: "<<rupees<<endl;
+    cout<<"Dollars: $"<<dollars<<endl;
+    return 0;
+}
