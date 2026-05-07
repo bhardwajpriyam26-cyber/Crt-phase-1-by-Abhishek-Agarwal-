@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+void updatebyValue(int a){
+    a=500;
+}
+
+void updatebyReference(int &a){
+    a=500;
+}
+
+int main(){
+    int original=100;
+    updatebyValue(original);
+    cout<<original<<"\n";
+    updatebyReference(original);
+    cout<<original<<"\n";
+}
+
+//Program --2
+//Access specifiers
+//private
+
+#include<iostream>
+using namespace std;
+
+class BankAccount{
+    private:
+    int balance=5000;
+    public:
+    void showBalance(){
+        cout<<balance;
+    }
+};
+int main() {
+    BankAccount obj1;
+    obj1.showBalance();
+}
