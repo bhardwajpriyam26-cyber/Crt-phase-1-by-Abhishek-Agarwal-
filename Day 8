@@ -94,3 +94,35 @@ int main(){
   b.start();
   b.drive();
 }
+
+
+#include<iostream>
+using namespace std;
+
+//Problem --1
+//Types of inheritance
+//1.4 --Multiple inheritance
+
+class Parent1 {
+    public:
+    void paiseDoMummy(){
+        cout<<"Mummy paise de do ghoomne jana hai..."<<"\n";
+    }
+};
+
+class Parent2 {
+    public:
+    void paiseDoPapa(){
+        cout<<"Papa paise de do books laani hai...";
+    }
+};
+
+class Child : public Parent1,public Parent2{
+    //NO LOGIC
+};
+
+int main(){
+  Child c;
+  c.paiseDoMummy();
+  c.paiseDoPapa();
+}    
