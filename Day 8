@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+//Problem --1
+//Types of inheritance
+//1.1 -- Single inheritance
+
+class Vehicle {
+    public:
+    void start() {
+        cout<<"Vehicle starts"<<"\n";
+    }
+};
+class Car : public Vehicle {
+    public:
+    void drive() {
+        cout<<"Car is running"<<"\n"; 
+    }
+};
+
+int main(){
+  Car obj1;
+  obj1.drive();
+  obj1.start();
+}
