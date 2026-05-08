@@ -169,7 +169,7 @@ using namespace std;
 class BankAccount {
     private:
     int bankBalance;
-    
+    public:
     void setBalance(int amount) {
        if(amount >= 0){
            bankBalance = amount;
